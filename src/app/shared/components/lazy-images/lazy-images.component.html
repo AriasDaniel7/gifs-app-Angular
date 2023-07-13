@@ -1,0 +1,10 @@
+<div class="d-flex justify-content-center">
+  <img
+  [src]="url"
+  class="card-img-top animate__animated animate__fadeIn"
+  [alt]="alt"
+  (load)="onLoad()"
+  [ngStyle]="{ display: cargaImage ? '': 'none'}">
+
+  <img *ngIf="!cargaImage" class="mt-3" src="assets/tail-spin.svg" alt="load" height="50" width="50">
+</div>
